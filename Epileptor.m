@@ -26,7 +26,7 @@ sigma_2=0:0.01:0.04;
 delta_t=step_size;
 
 %% Euler-Maruyama method for updating the solutions 
-% please notice that condition (i) is turned into differential form and incorperated into equations. 
+% please notice that condition (i) is turned into differential form and incorporated into equations. 
 % noise has been added.
 
 for sim_num=1:4
