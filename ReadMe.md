@@ -21,7 +21,7 @@ The initial conditions for the numerical simulation are
 
 <center><img src = "./pictures/Equations_4.jpg"></center>
 
-Usually, you can solve equations (1-5) directly by ordinary differential equation solvers like ode45 in MATLAB. However, because of the existence of conditions (i-iii) and introduced additive Gaussian white noise. Epileptor turns into stochastic differential equations (SDEs). It is not trivial to solve such equations. I spend about two months on this problem.
+Usually, you can solve equations (1-5) directly by ordinary differential equation solvers like ode45 in MATLAB. However, because of the existence of conditions (i-iii) and introduced additive Gaussian white noise, Epileptor turns into stochastic differential equations (SDEs). It is not trivial to solve such equations. I spend about two months on this problem.
 
 First, condition (i) is an integral equation and needs to be incorperated into equation (1-5) in differential form by differentiation. Then SDEs are numerically solved by Euler-Maruyama method.
 
@@ -29,7 +29,7 @@ After running the script, you will get the results like this:
 
 <center><img src = "./pictures/Epileptor.jpg"></center>
 
-There are some insights I have gained from Epileptor: (1) basic computational neuroscience knowledge in nonlinear dynamics especially bifurcation theories; (2) potential rhythms underlying the evolution in epilepsy which is currently I am working on.
+There are some insights I have gained from Epileptor: (1) basic computational neuroscience knowledge in nonlinear dynamics especially bifurcation theories; (2) potential rhythms underlying the evolution in epilepsy which is currently what I am working on.
 
 The test environment of the script is MATLAB2018b. It should work for most MATLAB version because no advanced toolbox is needed. I hope this script could help you a little in epilepsy research and solving SDEs.
 
