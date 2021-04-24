@@ -7,19 +7,27 @@ This is a MATLAB implementation of the model Epileptor which was introduced in [
 
 The full set equations are listed below:
 
+<center>
 ![alt](./pictures/Equations_1.jpg)
+</center>
 
 where
 
+<center>
 ![alt](./pictures/Equations_2.jpg)
+</center>
 
 parameter settings: 
 
+<center>
 ![alt](./pictures/Equations_3.jpg)
+</center>
 
 The initial conditions for the numerical simulation are 
 
+<center>
 ![alt](./pictures/Equations_4.jpg)
+</center>
 
 Usually, you can solve equations (1-5) directly by ordinary differential equation solvers like ode45 in MATLAB. However, because of the existence of conditions (i-iii) and introduced additive Gaussian white noise. Epileptor turns into stochastic differential equations (SDEs). It is not trivial to solve such equations. I spend about two months on this problem.
 
